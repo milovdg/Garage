@@ -42,8 +42,10 @@ public class Main {
         Truck revellM851507 = new Truck("JH4KA4670KC024543", revell, revell851507, 65000);
         revellM851507.drive();
         revellM851507.stopDriving(750);
+        revellM851507.upload(5000);
+        revellM851507.download();
         Garage.signUp(revellM851507);
-        
+
         Garage.getVehiclesList();
 
     }
