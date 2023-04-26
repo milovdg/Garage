@@ -1,3 +1,5 @@
+package main.java;
+
 public class Truck extends Car{
 
     public Truck(String vin, Makes make, Models model, int odometer) {

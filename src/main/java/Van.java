@@ -1,3 +1,5 @@
+package main.java;
+
 public class Van extends Car{
 
     VanTypes vanType;

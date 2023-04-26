@@ -1,3 +1,5 @@
+package main.java;
+
 public class Econom extends Car{
 
     public BodyTypes bodyType;

@@ -1,3 +1,7 @@
+package main.java;
+
+import main.java.exceptions.CarNotFoundException;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -35,7 +39,13 @@ public class Main {
         hondaOdissey.drive();
         hondaOdissey.stopDriving(250);
         Garage.signUp(hondaOdissey);
-        Garage.signOut(hondaOdissey);
+
+        try {
+            Garage.signOut(hondaOdissey);
+        } catch (CarNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+
 
         Makes revell = Makes.REVELL;
         Models revell851507 = Models.REVELL851507;

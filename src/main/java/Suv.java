@@ -1,3 +1,5 @@
+package main.java;
+
 public class Suv extends Car{
     SUVTypes SUVType;
 
